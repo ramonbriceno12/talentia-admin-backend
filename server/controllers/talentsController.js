@@ -1,6 +1,5 @@
 const User = require('../models/userModel');
 const JobTitle = require('../models/jobTitles');
-const Skills = require('../models/skillsModel');
 const { Op, Sequelize } = require('sequelize');
 const UserSkills = require("../models/userSkills");
 const sequelize = require("../config/database"); // Import DB connection

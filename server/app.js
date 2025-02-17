@@ -11,6 +11,7 @@ const uploadRoutes = require('./routes/uploadRoutes');
 const actionsRoutes = require('./routes/actionsRoutes');
 const jobTitlesRoutes = require('./routes/jobTitlesRoutes');
 const linksRoutes = require('./routes/linksRoutes');
+const dashboardRoutes = require('./routes/dashboardRoutes');
 require("./models/associations"); // Ensure associations are set up before syncing
 
 
@@ -36,6 +37,7 @@ app.use('/api/upload', uploadRoutes);
 app.use('/api/actions', actionsRoutes);
 app.use('/api/job-titles', jobTitlesRoutes);
 app.use('/api/links/', linksRoutes);
+app.use('/api/dashboard/', dashboardRoutes);
 
 const PORT = process.env.PORT || 6000;
 
